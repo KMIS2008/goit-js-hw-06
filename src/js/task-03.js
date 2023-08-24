@@ -14,4 +14,26 @@ const images = [
 ];
 
 const galery = document.querySelector(".gallery");
-console.log(galery);
+// console.log(galery);
+
+galery.classList.add("images-flex")
+
+const listImages = images.map( image => {
+  const {url, alt} = image; 
+ 
+  return `<li> <img scr="${url}" alt="${alt}" />
+  </li>`; 
+  
+  } );
+  // console.log(listImages);
+
+  const finalListImages =  listImages.join('');
+  // console.log(finalListImages);
+
+
+  // galery.append(...listImages)
+
+  
+  galery.insertAdjacentHTML('beforeend', finalListImages)
+
+
