@@ -30,10 +30,8 @@ const listImages = images.map( image => {
   const finalListImages =  listImages.join('');
   // console.log(finalListImages);
 
-
   // galery.append(...listImages)
 
-  
   galery.insertAdjacentHTML('beforeend', finalListImages)
 
 
