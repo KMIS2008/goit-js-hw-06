@@ -14,8 +14,8 @@ console.dir(body);
 
 const handlerChangeColor = (event) => {
 
-body.style.backgroundColor = getRandomHexColor()
-spanColor.textContent = body.style.backgroundColor;
+document.body.style.backgroundColor = getRandomHexColor()
+spanColor.textContent = document.body.style.backgroundColor;
 }
 
 
