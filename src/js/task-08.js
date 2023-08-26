@@ -10,7 +10,6 @@ const handlerFormSubmit = (event) => {
           elements: { email, password }
         } = event.currentTarget;
 
-
     if (email.value === '' || password.value === '') {
         return alert('All fields must be filled') 
     }
@@ -21,7 +20,5 @@ const handlerFormSubmit = (event) => {
 
     }
 }
-
-
 
 form.addEventListener('submit', handlerFormSubmit)
