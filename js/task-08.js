@@ -15,7 +15,11 @@ const handlerFormSubmit = (event) => {
     }
 
     else {
-     console.log(`Email: ${email.value}, Password: ${password.value}`);
+        const result = {
+            Email: email.value,
+            Password: password.value
+        }
+     console.log(result);
      event.currentTarget.reset();
 
     }

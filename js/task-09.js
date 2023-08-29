@@ -15,8 +15,18 @@ console.dir(body);
 const handlerChangeColor = (event) => {
 
 document.body.style.backgroundColor = getRandomHexColor()
-spanColor.textContent = document.body.style.backgroundColor;
+
+  spanColor.textContent = getRandomHexColor()
 }
 
 
 buttonChange.addEventListener('click', handlerChangeColor);
+
+
+
+
+
+
+
+// document.body.style.backgroundColor = getRandomHexColor()
+// spanColor.textContent = document.body.style.backgroundColor; /// rgb значення

@@ -20,9 +20,12 @@ galery.classList.add("images-flex")
 
 const listImages = images.map( image => {
   const {url, alt} = image; 
+  // console.log(alt)
  
-  return `<li> <img scr="${url}" alt="${alt}" />
-  </li>`; 
+  return `<li>
+        <img src="${url}" width = 300 alt="${alt}" />
+       
+        </li>`;
   
   } );
   // console.log(listImages);
